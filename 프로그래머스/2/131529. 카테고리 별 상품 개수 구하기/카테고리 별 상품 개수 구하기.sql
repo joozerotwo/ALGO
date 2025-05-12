@@ -1,0 +1,5 @@
+SELECT SUBSTR(product_code,1,2) CATEGORY,
+       COUNT(product_code) PRODUCTS 
+FROM PRODUCT
+GROUP BY 1
+ORDER BY 1
